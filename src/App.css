@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.app {
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.on-load {
+    justify-content: center;
+    padding: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animal {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+#og-btn {
+    padding: 2%;
+    margin: 20%;
+    border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#rdm-btn {
+    padding:2%;
+    border-radius: 20px;
+}
+
+#name:hover {
+    cursor: pointer;
+}
+
+#rdm-btn:hover, #og-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.animal-img {
+    max-width: 50%;
+    /* height: auto; */
+    max-height: 75%;
+    flex: 0 1 10px;
+    /* margin: 1%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.animal-detail {
+    flex-wrap: wrap;
+    flex: 0 1 30px;
+    justify-content: right;
+    border-style: dashed;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
