@@ -20,7 +20,7 @@ const AnimalContainer = () => {
 
     return (
         <>
-            <h1>Random Zoo Animals</h1>
+            <h1 className='title'>Random Zoo Animals</h1>
             <div className='flex-container'>
                 { animal
                     ?
@@ -30,7 +30,7 @@ const AnimalContainer = () => {
                     : 
                         <div className='on-load'>
                             <h3>Click the button to see an animal</h3>
-                            <button id="og-btn" onClick={fetchAnimal}>Show me an Animal! c:</button>
+                            <button id="og-btn" onClick={fetchAnimal}>Enter the zoo!</button>
                         </div>
                 }
                 { selected && selected === animal

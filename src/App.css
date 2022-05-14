@@ -1,5 +1,11 @@
 .app {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
 }
 
 .flex-container {
@@ -18,17 +24,22 @@
 .animal {
     flex-wrap: wrap;
     justify-content: center;
+    font-weight: 700;
 }
 
 #og-btn {
-    padding: 2%;
+    padding: 10%;
+    font-size: xx-large;
     margin: 20%;
     border-radius: 20px;
+    border-style: ridge;
+    background-color: rgb(208, 235, 245);
 }
 
 #rdm-btn {
     padding:2%;
     border-radius: 20px;
+    background-color: rgb(208, 235, 245);
 }
 
 #name:hover {
@@ -53,7 +64,7 @@
     flex-wrap: wrap;
     flex: 0 1 30px;
     justify-content: right;
-    border-style: dashed;
+    border-style: double;
     margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
