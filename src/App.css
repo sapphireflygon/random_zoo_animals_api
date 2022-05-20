@@ -6,38 +6,66 @@
 .title {
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
+    font-size: 40pt;
+    margin-bottom: 5%;
 }
 
+.modal-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 50%;
+}
+
+/* 
 .flex-container {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+}
+
+.flex-child {
+    flex-grow: 1;
+    flex-basis:33%;
+} */
+
+#modal-btn {
+    padding: 3.5%;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: large;
+    background-color: rgb(208, 235, 245);
+    border-radius: 7px;
 }
 
 .on-load {
     justify-content: center;
-    padding: 5%;
+    padding: 0%;
+}
+
+.on-load > h3 {
+    font-size: 30pt;
 }
 
 .animal {
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
     font-weight: 700;
 }
 
 #og-btn {
-    padding: 10%;
-    font-size: xx-large;
-    margin: 20%;
-    border-radius: 20px;
-    border-style: ridge;
+    padding: 7%;
+    font-size: 50pt;
+    margin: 10%;
+    border-radius: 7px;;
+    border: 20px outset rgb(149, 220, 245);
     background-color: rgb(208, 235, 245);
 }
 
 #rdm-btn {
     padding:2%;
+    margin-bottom: 30px;
+    margin-top: 2%;
     border-radius: 20px;
     background-color: rgb(208, 235, 245);
 }
@@ -46,30 +74,35 @@
     cursor: pointer;
 }
 
-#rdm-btn:hover, #og-btn:hover {
+#rdm-btn:hover, #og-btn:hover, #modal-btn:hover {
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#rdm-btn:active, #og-btn:active, #modal-btn:active{
+    transform: translateY(4px)
 }
 
 .animal-img {
-    max-width: 50%;
-    /* height: auto; */
-    max-height: 75%;
-    flex: 0 1 10px;
-    /* margin: 1%; */
+    /* width: 90%; */
+    max-width: 90%;
+    height: auto;
+    max-height: 600px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .animal-detail {
-    flex-wrap: wrap;
-    flex: 0 1 30px;
-    justify-content: right;
+    background-color: white;
     border-style: double;
-    margin-top: 5%;
+    text-align: center;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
+    /* max-width: fit-content; */
+    height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

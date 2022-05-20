@@ -8,10 +8,11 @@ const Animal = ({ animal, fetchAnimal, showDetails }) => {
 
     return (
         <>
-        <h4>Click on the animal's name for more information about them.</h4>
+        
         <div className="animal-box">
-            <img className="animal-img" src={animal.image_link} alt="A random zoo animal"/>
             <h3 id="name" onClick={handleClick}>{animal.name}</h3>
+            <img className="animal-img" src={animal.image_link} alt="A random zoo animal"/>
+            <br/>
             <button id="rdm-btn" onClick={fetchAnimal}>Gimme another one!</button>
         </div>
         </>

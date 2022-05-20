@@ -1,6 +1,6 @@
 import React from "react";
 
-const AnimalDetail = ({selected}) => {
+const AnimalDetail = ({selected, closeModal}) => {
 
     return (
         <div className="animal-detail">
@@ -13,6 +13,7 @@ const AnimalDetail = ({selected}) => {
                 <u>Weight</u>: between {selected.weight_min} and {selected.weight_max} lbs <br/>
                 <u>Length</u>: between {selected.length_min} and {selected.length_max} ft <br/>
                 <u>Lifespan</u>: {selected.lifespan} years <br/>
+                <button id="modal-btn" onClick={closeModal}>That's neat!</button>
             </p>
         </div>
     );
